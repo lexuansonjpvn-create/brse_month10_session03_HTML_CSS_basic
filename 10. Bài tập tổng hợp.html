@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Photo App</title>
+</head>
+<body>
+    <h1>Cat Photo App</h1>
+    <main>
+        <h2>Cat Photos</h2>
+        <p>Click the button below to view a random cat photo:</p>
+        <button id="catButton">Show Cat Photo</button>
+        <div id="catPhotoContainer"></div>
+        <p>See more <a href="#">cat photos</a>!</p>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back." style="width: 200px; height: auto;">
+    </main>
+    <h2>Cat Lists</h2>
+    <ul>
+        <li>Cat Breeds</li>
+        <li>Cat Colors</li>
+        <li>Cat Sizes</li>
+        <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=300" alt="Three cats looking up." style="width: 200px; height: auto;">
+    </ul>
+
+    <h2>Cat Gallery</h2>
+    <ol>
+        <li>Persian</li>
+        <li>Siamese</li>
+        <li>Maine Coon</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkmaX68ZMbrKknKLVfyY0aUhBTlF01f2fmPEmucDYTBQ&s=10" alt="A collection of cute cats." style="width: 200px; height: auto;"/>
+    </ol>
+<h2>Breeds</h2>
+<table border="1">
+    <tr>
+        <th>Breed</th>
+        <th>Image</th>
+        <th>Origin</th>
+        <th>Type</th>
+        <th>Characteristics</th>
+    </tr>
+    <tr>
+        <td><a href="#persian" title="Persian Cat">Persian<sup>1</sup></a></td>
+        <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/250px-Gustav_chocolate.jpg?w=100" alt="Persian Cat" style="width: 100px;height: auto;"></td>
+        <td>Iran</td>
+        <td>Long fur, flat face</td>
+        <td>Docile, affectionate</td>
+    </tr>
+    <tr>
+        <td><a href="#siamese" title="Siamese Cat">Siamese<sup>2</sup></a></td>
+        <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Aegean_cat.jpg/250px-Aegean_cat.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Siamese Cat" style="width: 100px;height: auto;"></td>
+        <td>Thailand</td>
+        <td>Blue eyes, cream-colored body</td>
+        <td>Active, vocal</td>
+    </tr>
+    <tr>
+        <td><a href="#maine-coon" title="Maine Coon Cat">Maine Coon<sup>3</sup></a></td>
+        <td><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/250px-American_bobtail_2.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Maine Coon Cat" style="width: 100px;height: auto;"></td>
+        <td>United States</td>
+        <td>Large size, tufted ears</td>
+        <td> Gentle, friendly</td>
+    </tr>
+</table>
+<h2>Cat Form</h2>
+<form action="#" method="post">
+    <fieldset>
+        <legend><label for="catName">Is your cat indoor or outdoor cat?</label><br/></legend>
+        <input type="radio" id="indoor" name="catEnvironment" value="indoor">
+        <label for="indoor">Indoor</label>
+        <input type="radio" id="outdoor" name="catEnvironment" value="outdoor">
+        <label for="outdoor">Outdoor</label>
+    </fieldset>
+    <fieldset>
+        <legend><label for="catPersonality">What is your cat's personality like?</label></legend><br/>
+        <input type="checkbox" id="loving" name="catPersonality" value="loving">
+        <label for="loving">Loving</label>
+        <input type="checkbox" id="playful" name="catPersonality" value="playful">
+        <label for="playful">Playful</label>
+        <input type="checkbox" id="independent" name="catPersonality" value="independent">
+        <label for="independent">Independent</label>
+
+    </fieldset>
+    <div>
+        <input type="search" id="catSearch" name="catSearch" placeholder="Cat photo Url" />
+        <input type="submit" value="Submit">
+    </div>
+    
+</form>
+</body>
+<footer>
+    <p>No rights reserved - <a href="https://en.wikipedia.org/wiki/List_of_cat_breeds">Wikipedia.org</a></p>
+</footer>
+</html>
